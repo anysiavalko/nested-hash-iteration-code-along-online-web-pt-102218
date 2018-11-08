@@ -20,7 +20,8 @@ def remove_strawberry(contacts)
       if attribute == :favorite_ice_cream_flavors
         value.each do |flavor|
           if flavor == "strawberry"
-            
+            strawberry_index = :favorite_ice_cream_flavors.index[strawberry]
+            :favorite_ice_cream_flavors.delete_at(strawberry_index) 
           end
         end
       end
